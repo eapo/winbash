@@ -32,6 +32,6 @@ FOR /L %%a in (%s%,-1,1) do (
 )
 
 :execute command with argument
-CSCRIPT playsound.vbs "%msg%"
+CSCRIPT %~dp0/playsound.vbs "%msg%"
 
 EXIT
